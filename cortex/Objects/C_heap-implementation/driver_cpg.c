@@ -1,23 +1,11 @@
-/*
- * This is a C program that should be used to test your heap.c toward your 
- * midpoint report.
- *
- * malloc( ): renamed _malloc( )
- * free( ):   renamed  _free( )
- * printf( ): included
- * alarm( ):  commented out
- * signal( ): commented out
- */
-
 #include <string.h> // bzero, strncpy
 #include <stdlib.h>  // malloc, free
 #include <signal.h>  // signal
 #include <unistd.h>  // alarm
 #include <stdio.h>   // printf
 
-extern void *_malloc( int size );  // you need to implement in heap.c
-extern void *_free( void *ptr );   // you need to implement in heap.c
-
+extern void *_malloc( int size );  
+extern void *_free( void *ptr );   
 int* alarmed;
 
 void sig_handler1( int signum ) {
