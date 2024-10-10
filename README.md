@@ -79,6 +79,7 @@ tasks and handling time-based interrupts in the system. It ensures that time-sen
 are performed at the correct intervals.
 
 **Challenges and Improvements**
+
 One of the main challenges I faced was integrating SVC instructions with assembly routines. 
 This integration is needed for handling system-level functions like memory allocation and signal 
 management, but it was complex due to the low-level nature of these operations and my lack of 
